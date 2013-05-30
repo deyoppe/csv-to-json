@@ -101,7 +101,7 @@ var CSV = new function () {
 				var fields = parseRows(csvRows);
 				var objArr = convertToJson(fields);
 				var jsonText = JSON.stringify(objArr, null, "\t");
-				return jsonText;
+				return JSON.parse(jsonText);
 			}
 		}
 	}
